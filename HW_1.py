@@ -28,10 +28,10 @@ print(F'Cумма цифр заданного числа = {summ}')
 
 all_bird = int(input('Введите общее число журавликов, которые сделали дети: '))
 if all_bird < 0 or all_bird % 6 != 0:
-    print('Вы ввелинекорректное количество журавликов')
+    print('Вы ввели некорректное количество журавликов')
 else:
-    children_one_and_two = int(all_bird / 6)
-    children_three = int(children_one_and_two * 4)
+    children_one_and_two = all_bird // 6
+    children_three = children_one_and_two * 4
     print(F'Петя и сережа сделали по {children_one_and_two} журавликов, а Катя сделала {children_three} журавликов')
 
 
@@ -68,7 +68,7 @@ else:
 n = int(input('Введите значение n: '))
 m = int(input('Введите значение m: '))
 k = int(input('Введите значение k: '))
-if k <= n * m and (k % n == 0 or k % m == 0):
+if k <= n * m and (k % n == 0 or k % m == 0): ## или k <= n * m, если один второй кусок не может быть равен 0
     print('yes')
 else:
     print('no')
