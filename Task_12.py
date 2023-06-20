@@ -6,7 +6,7 @@
 summ = int(input('Введите сумму чисел: '))
 mult = int(input('Введите произведение чисел: '))
 result = False
-for i in range(1, summ):
+for i in range(1, summ//2+1):
     if summ - i == mult // i and mult % i == 0:
         print(i, summ - i)
         result = True
