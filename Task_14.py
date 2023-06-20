@@ -2,6 +2,11 @@
 
 n = int(input('Введите число N: '))
 num = 2
+flag = False
+if n >= 1: 
+    print(1)
+    flag = True
 while num <= n:
     print(num)
     num *= 2
+if not flag: print('Введено некорректное значение')
