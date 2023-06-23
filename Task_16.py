@@ -4,20 +4,22 @@
 # строках записаны N целых чисел Ai
 # . Последняя строка содержит число X
 
-x = int(input())
-array = []
-for i in range(1, x+1):
-    array.append(i)
-    print(array[i-1], end = ' ')
-print()
-y = int(input())
-print(array.count(y))
 
-# Решение с случайной подставновкой чисел в массив
-# from random import randint
-# x = int(input('Введите количество элементов массива: '))
+# Решение, если числа в массиве идут от 1 до n по порядку
+# x = int(input())
 # array = []
 # for i in range(1, x+1):
-#     array.append(randint(1,11))
+#     array.append(i)
+#     print(array[i-1], end = ' ')
+# print()
 # y = int(input())
-# print(f'В массиве значение послежнего элемента втречается {array.count(y)} раз')
+# print(array.count(y))
+
+# Решение с случайной подставновкой чисел в массив
+from random import randint
+x = int(input('Введите количество элементов массива: '))
+array = []
+for i in range(1, x+1):
+    array.append(randint(1,11))
+y = int(input())
+print(f'В массиве значение послежнего элемента втречается {array.count(y)} раз')
