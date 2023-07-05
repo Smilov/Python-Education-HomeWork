@@ -6,8 +6,8 @@
 '''
 
 number_one = int(input('Первое число арифметической прогрессии:   '))
-number_count = int(input('Первое шаг прогрессии:   '))
-number_len = int(input('Первое количество элементов прогрессии:   '))
+number_count = int(input('Шаг прогрессии:   '))
+number_len = int(input('Количество элементов прогрессии:   '))
 list_final = [number_one]
 for i in range(1, number_len):
     list_final.append(list_final[i-1]+number_count)
